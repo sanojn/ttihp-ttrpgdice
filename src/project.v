@@ -5,7 +5,7 @@
 
 `define default_netname none
 
-module tt_um_sanojn_ttrpg_dice (
+module tt_um_sanojn_ttrpg_dice_ihp (
     input  wire [7:0] ui_in,    // buttons
     output wire [7:0] uo_out,   // 7segment signals
     input  wire [7:0] uio_in,   // [7:5] configures IO polarity
