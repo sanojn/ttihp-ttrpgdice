@@ -23,7 +23,7 @@ module tb ();
   wire [7:0] uio_out;
   wire [7:0] uio_oe;
 
-  tt_um_sanojn_ttrpg_dice user_project (
+  tt_um_sanojn_ttrpg_dice_ihp user_project (
 
       // Include power ports for the Gate Level test:
 `ifdef GL_TEST
