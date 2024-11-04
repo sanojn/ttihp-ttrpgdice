@@ -26,10 +26,11 @@ module tb ();
   tt_um_sanojn_ttrpg_dice_ihp user_project (
 
       // Include power ports for the Gate Level test:
-`ifdef GL_TEST
-      .VPWR(1'b1),
-      .VGND(1'b0),
-`endif
+      // These ports break the IHP flow
+      //`ifdef GL_TEST
+      //      .VPWR(1'b1),
+      //      .VGND(1'b0),
+      //`endif
 
       .ui_in  (ui_in),    // Dedicated inputs
       .uo_out (uo_out),   // Dedicated outputs
